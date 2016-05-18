@@ -36,6 +36,9 @@ function ApplicationView() {
   function append(text) {
     var div = document.getElementById('output');
     div.innerHTML = div.innerHTML + text;
+
+    var code = document.getElementById('code');
+    code.innerHTML = code.innerHTML + text;
   }
 
   function csv() {
