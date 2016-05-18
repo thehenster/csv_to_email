@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title></title>
+
+  <style type="text/css">
+    #csv, #template {
+      margin: 10px 0;
+      display: block;
+      width: 100%;
+      min-height: 200px;
+    }
+  </style>
+
+  <script type="text/javascript" src="js/papaparse.min.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
+</head>
+<body>
+  <textarea id="csv"></textarea>
+  <textarea id="template"></textarea>
+  <button id="process">Process</button>
+  <div id="output"></div>
+  <script type="text/javascript">
+    var applicationView = new ApplicationView();
+    window.application = new Application({view: applicationView});
+    application.boot();
+  </script>
+</body>
+</html>
